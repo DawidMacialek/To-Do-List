@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/5f4cc1afcb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- <h1>my to do list</h1> -->
+        <section class="panel">
+            <input type="text" class="input" placeholder="What next are you going to do today?">
+            <button type="submit" class="btn">add</button>
+        </section>
+        
+        <section class="listContainer">
+            <p>list of tasks to do</p>
+            <ul class="listToDo"></ul>
+        </section>
+        <section class="listContainer">
+            <p>list of things which are done</p>
+            <ul class="listDone"></ul>
+        </section>
+        <div class="clearWrap"><button class="btnClear" type="submit">clear</button></div>
+        <section class="countCointainer">
+            <div class="countToDo">
+                <p>to do:</p>
+                <div></div>
+            </div>
+            <div class="countDone">
+                <p>done:</p>
+                <div></div>
+            </div>
+            
+        </section>
+    </div> 
+       
+    
+    <script src="Add.js"></script>
+    <script src="Move.js"></script>
+    <script src="Action.js"></script>
+    <script src="Main.js"></script>
+</body>
+</html>

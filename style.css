@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    min-height: 100vh;
+    margin:  0 auto;
+    width: 85vw;
+    max-width: 1400px;
+    border: solid black 1px;
+    position: relative;
+    
+}
+
+.wrap h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5% 0 5% 0;
+}
+.panel {
+    width: 85%;
+    margin: 0 auto;
+   display: flex;
+   justify-content: center ;  
+   margin-top: 150px;
+}
+.panel .input {
+    height: 44px;
+    width: 60%;
+    margin-right: 15px;
+    font-size: 18px;
+    justify-content: center;
+}
+.panel .btn {
+    background-color: #14A2F9;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+    text-transform: uppercase;
+    line-height: 40px;
+    box-sizing: content-box;
+    transition: .2s;
+    color: white;
+    font-weight: 500;
+}
+
+.btn:active {
+    border: solid white 2px;
+    background-color: white;
+    color: black;
+}
+.btn:focus {
+    border: solid white 2px;
+}
+.listContainer {
+    width: 80%;
+    min-height: 100px;
+    border: solid 2px black;
+    margin: 50px auto 20px auto;
+    position: relative;
+}
+.listContainer p {
+    padding: 5px 0 ;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: solid 2px black;
+}
+div.clearWrap {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+}
+button.btnClear {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    color: white;
+    font-size: 18px;
+    width: 80px;
+   background-color: #14A2F9;
+    text-transform: uppercase;
+}
+
+.countCointainer {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* flex-direction: column; */
+    /* border: solid 1px red; */
+}
+
+.countToDo,
+.countDone {
+    width: 100px;
+    height: 100px;
+    /* border: solid 2px red; */
+    margin: 10px;
+    font-size: 26px;
+
+}
+.countToDo div,
+.countDone div {
+    font-size: 42px;
+    color: red;
+}
+
+ul.listDone {
+    max-height: 150px;
+    overflow: scroll;
+}
+li.task {
+margin: 10px 0;
+list-style: none;
+display: flex;
+}
+li.task p {
+display: inline;
+font-size: 18px;
+margin: 0 4% 0 1%;
+text-decoration: none;
+border-bottom: none;
+width: 62%;
+text-align: justify;
+word-wrap: break-word;
+hyphens: auto;
+border-bottom: dotted 1px black;
+}
+li.taskDone {
+margin: 10px 0;
+list-style: none;
+display: flex;
+color: grey;
+}
+li.taskDone p {
+display: inline;
+font-size: 18px;
+margin: 0 1% 0 1%;
+text-decoration: none;
+border-bottom: none;
+width: 96%;
+text-align: justify;
+word-wrap: break-word;
+border-bottom: dotted 1px black;
+}
+li.task button  {
+font-size: 16px;
+font-family: roboto, serif;
+color: #14A2F9;
+text-transform: uppercase;
+min-width: 15%;
+max-height: 25px;
+margin-right: 1%;
+}
+
+ @media (max-width: 700px) {
+     .wrap {
+         width: 100%;
+     }
+     .panel {
+         width: 95%;
+     }
+     .panel .input {
+        width: 80%;
+        margin-right: 2%;
+    }
+    .panel .btn {
+        width: 15%;
+    }
+    .listContainer {
+        width: 95%;
+        min-height: 80px;
+        border: solid 1px black;   
+    }
+    .listContainer p {
+        border-bottom: solid 1px black;
+    }
+    .countToDo,
+    .countDone {
+        font-size: 18px;
+    }
+    .countToDo div,
+    .countDone div {
+        font-size: 28px;
+    }
+    li.task {
+        justify-content: space-between;
+    }
+    li.task p {
+        display: inline;
+        font-size: 16px;
+        margin: 0 1% 0 1%;
+        text-decoration: none;
+        border-bottom: none;
+        width: 86%;
+        word-wrap: break-word;
+        border-bottom: dotted 1px black;
+    }
+    li.taskDone {
+    margin: 10px 0;
+    list-style: none;
+    display: flex;
+    color: grey;
+    }
+    li.taskDone p {
+    display: inline;
+    font-size: 14px;
+    margin: 0 1% 0 1%;
+    text-decoration: none;
+    border-bottom: none;
+    width: 96%;
+    text-align: left;
+    word-wrap: break-word;
+    border-bottom: dotted 1px black;
+    }
+    li.task button  {
+        font-size: 16px;
+        font-family: roboto, serif;
+        color: #14A2F9;
+        text-transform: uppercase;
+        min-width: 25px;
+        margin-right: 2%;
+        border: none;
+        line-height: 25px;
+        font-size: 0;
+        }
+    
+    .smallDeleteBtn::before {
+        display: inline-block;
+        background-image: url(img/delate.jpg);
+        background-size: 25px;
+        content: "";
+        width: 25px;
+        height: 25px;   
+    }
+    .smallDoneBtn::after {
+        display: inline-block;
+        background-image: url(img/done.png);
+        background-size: 25px;
+        content: "";
+        width: 25px;
+        height: 25px; 
+    }
+
+} 
+
+@media (max-width: 420px) {
+    li.task p {
+        font-size: 14px;
+        width: 72%;
+    }
+}
