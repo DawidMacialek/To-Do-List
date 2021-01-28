@@ -111,7 +111,7 @@ button.btnClear {
 .countToDo div,
 .countDone div {
     font-size: 42px;
-    color: red;
+    color: blue;
 }
 
 ul.listDone {
